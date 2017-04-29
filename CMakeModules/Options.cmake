@@ -5,7 +5,7 @@ option(BUILD_SAMPLE "Build sample" OFF)
 set(DEPOT_TOOLS_PATH "" CACHE STRING "Path to your own depot_tools directory")
 set(NINJA_ARGS "" CACHE STRING "Ninja arguments to pass before compiling WebRTC")
 set(GN_EXTRA_ARGS "" CACHE STRING "Extra gn gen arguments to pass before generating build files")
-set(WEBRTC_REVISION "" CACHE STRING "WebRTC commit hash to checkout")
+set(WEBRTC_REVISION "${LIBWEBRTC_WEBRTC_REVISION}" CACHE STRING "WebRTC commit hash to checkout")
 set(WEBRTC_BRANCH_HEAD "${LIBWEBRTC_WEBRTC_HEAD}" CACHE STRING "WebRTC branch head to checkout")
 
 if (DEPOT_TOOLS_PATH)
